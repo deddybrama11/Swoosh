@@ -1,4 +1,4 @@
-package com.bram.swoosh
+package com.bram.swoosh.Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
