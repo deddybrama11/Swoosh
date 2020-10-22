@@ -9,11 +9,13 @@ import kotlinx.android.synthetic.main.activity_finish.*
 
 class FinishActivity : AppCompatActivity() {
 
+    lateinit var player: Player
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
 
-        val player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)!!
+        player = intent.getParcelableExtra(EXTRA_PLAYER)!!
 
         searchLeagueText.text = "Looking for ${player.league} ${player.skill} league near you ..."
 
